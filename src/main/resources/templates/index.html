@@ -6,7 +6,7 @@
 <title>Test Page</title>
 </head>
 <body>
-	<h1>언어지능 과정 명단</h1>
+	<h1>언어지능 과정 명단 2025.09.08</h1>
 	<table border="1">
 		<thead>
 			<tr>
@@ -20,7 +20,7 @@
 			<!-- 객체 바인딩 해놓은 List 가져와서 출력하기 -->
 			<!-- thymeleaf는 태그의 속성을 이용해서 control -->
 			<!-- \${이름} : jsp에서는 scope 구분을 안했었음! thymeleaf는 request 영역에서만 꺼낼 수 있음 -->
-			<!-- \${session.이름} -->
+			<!-- \${session.이름}    list를 vo에 저장 -->
 			<tr th:each="vo:${list}">
 			    <!-- prototype 제작에 효과적이다! front 개발자도 볼 때 편하다! -->
 				<td th:text = "${vo.id}">번호</td>
